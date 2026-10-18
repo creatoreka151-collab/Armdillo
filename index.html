@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111311">
+  <title>Armadillo — Custom Live Preview</title>
+  <meta name="description" content="Rancang kasur Armadillo sesuai preferensi material, lapisan, dan ukuran pilihan Anda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Armadillo home">
+        <span class="brand-mark"> <img src="images/logo-armadillo.png" alt="Logo Armadillo">
+
+      </a>
+      <div class="topbar-note"><span class="status-dot"></span> CUSTOM LIVE PREVIEW</div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow">DESIGNED AROUND YOU</p>
+        <h1>Rancang kasur<br><em>ideal Anda.</em></h1>
+        <p class="intro-copy">Padukan material, lapisan kenyamanan, dan ukuran untuk menciptakan pengalaman tidur yang terasa personal.</p>
+      </section>
+
+      <section class="workspace" aria-label="Konfigurator kasur">
+        <div class="preview-panel">
+          <div class="panel-topline">
+            <div><p class="eyebrow">YOUR BUILD</p><h2>Live preview</h2></div>
+            <span class="preview-chip"><span class="status-dot"></span> Real-time</span>
+          </div>
+          <div class="preview-stage">
+            <div class="stage-glow"></div>
+            <div class="image-container" aria-label="Visual lapisan kasur">
+              <img id="baseMaterialImage" src="" alt="Lapisan material dasar" />
+              <img id="supportLayerImage" src="" alt="Lapisan penopang" />
+              <img id="comfortLayerImage" src="" alt="Lapisan kenyamanan" />
+              <img id="layerLastImage" src="" alt="Lapisan ekstra" />
+              <img id="additionalLayerImage" src="" alt="Lapisan finishing" />
+              <div class="preview-empty" id="previewEmpty"><span class="empty-icon">✳</span><strong>Bangun kasur Anda</strong><span>Pilih material di panel konfigurasi</span></div>
+            </div>
+            <div class="stage-caption"><span>ARMADILLO / CUSTOM SERIES</span><span>01 — 06</span></div>
+          </div>
+          <div class="selected-summary">
+            <div><span class="summary-label">UKURAN PILIHAN</span><strong id="summarySize">Belum dipilih</strong></div>
+            <div><span class="summary-label">TINGGI LAPISAN</span><strong id="summaryLayers">0 cm</strong></div>
+          </div>
+          <div class="preview-footnote"><span class="footnote-icon">ⓘ</span> Visual preview mengikuti aset material yang tersedia. Hasil akhir dapat sedikit berbeda.</div>
+        </div>
+
+        <aside class="config-panel">
+          <div class="config-heading"><div><p class="eyebrow">MAKE IT YOURS</p><h2>Konfigurasi</h2></div><span class="step-count">6 LANGKAH</span></div>
+          <div class="field-list">
+            
+      <div class="field-group">
+        <div class="field-heading"><label for="baseMaterial">Base material</label><span>01</span></div>
+        <p class="field-hint">Pilih konstruksi inti kasur</p>
+        <select class="field-select" id="baseMaterial">
+                            <option value="none">None</option>
+                            <option value="18cm Pocket Encasement + Rl">18cm Pocket Encasement + Rl</option>
+                            <option value="20cm Semi Ortho Foam (D50)">20cm Semi Ortho Foam (D50)</option>
+                            <option value="20cm Ortho Foam (D70)">20cm Ortho Foam (D70)</option>
+                            <option value="20cm Foam (D24)">20cm Foam (D24)</option>
+                            <option value="22cm Pocket Encasement + Rl">22cm Pocket Encasement + Rl</option>
+                        </select>
+      </div>
+
+      <div class="field-group">
+        <div class="field-heading"><label for="supportLayer">Support layer</label><span>02</span></div>
+        <p class="field-hint">Atur tingkat dukungan</p>
+        <select class="field-select" id="supportLayer">
+                            <option value="none">None</option>
+                            <option value="4cm Orthopedic (D120)">4cm Orthopedic (D120)</option>
+                            <option value="10cm Semi Orthopedic D50">10cm Semi Orthopedic D50</option>
+                            <option value="4cm Semi Orthopedic D50">4cm Semi Orthopedic D50</option>
+                            <option value="15cm Semi Orthopedic D50">15cm Semi Orthopedic D50</option>
+                            <option value="5cm Semi Orthopedic D50">5cm Semi Orthopedic D50</option>
+                            <option value="6cm D24">6cm D24</option>
+                        </select>
+      </div>
+
+      <div class="field-group">
+        <div class="field-heading"><label for="comfortLayer">Comfort layer</label><span>03</span></div>
+        <p class="field-hint">Pilih material kenyamanan</p>
+        <select class="field-select" id="comfortLayer">
+                            <option value="none">None</option>
+                            <option value="2cm D24">2cm D24</option>
+                            <option value="2cm R50">2cm R50</option>
+                            <option value="3cm R50">3cm R50</option>
+                            <option value="Synth Latex D26 1,5cm">Synth Latex D26 1,5cm</option>
+                            <option value="Synth Latex D26 2cm">Synth Latex D26 2cm</option>
+                            <option value="Synth Latex D50 2cm">Synth Latex D50 2cm</option>
+                            <option value="Synth Latex D50 5cm">Synth Latex D50 5cm</option>
+                            <option value="Memory Foam A Grade (Min Qty 1,6m3) 4cm">Memory Foam A Grade 4cm</option>
+                            <option value="Latex A Grade 5cm">Latex A Grade 5cm</option>
+                            <option value="Latex B Grade 5cm">Latex B Grade 5cm</option>
+                            <option value="Memory Foam B Grade (Min Qty 1,6m3) 4cm">Memory Foam B Grade 4cm</option>
+                        </select>
+      </div>
+
+      <div class="field-group">
+        <div class="field-heading"><label for="layerLast">Extra layer</label><span>04</span></div>
+        <p class="field-hint">Tambahkan lapisan ekstra</p>
+        <select class="field-select" id="layerLast">
+                            <option value="none">None</option>
+                            <option value="2cm D24">2cm D24</option>
+                            <option value="2cm R50">2cm R50</option>
+                            <option value="3cm R50">3cm R50</option>
+                            <option value="Synth Latex D26 1,5cm">Synth Latex D26 1,5cm</option>
+                            <option value="Synth Latex D26 2cm">Synth Latex D26 2cm</option>
+                            <option value="Synth Latex D50 2cm">Synth Latex D50 2cm</option>
+                            <option value="Synth Latex D50 5cm">Synth Latex D50 5cm</option>
+                            <option value="Memory Foam A Grade (Min Qty 1,6m3) 4cm">Memory Foam A Grade 4cm</option>
+                            <option value="Latex A Grade 5cm">Latex A Grade 5cm</option>
+                            <option value="Latex B Grade 5cm">Latex B Grade 5cm</option>
+                            <option value="Memory Foam B Grade (Min Qty 1,6m3) 4cm">Memory Foam B Grade 4cm</option>
+                        </select>
+      </div>
+
+      <div class="field-group">
+        <div class="field-heading"><label for="additionalLayer">Finishing</label><span>05</span></div>
+        <p class="field-hint">Tentukan tampilan akhir</p>
+        <select class="field-select" id="additionalLayer">
+                            <option value="none">None</option>
+                            <option value="1 Side 5 Cm Quilting Top">1 Side 5 Cm Quilting Top</option>
+                            <option value="1 Side Non Quilting">1 Side Non Quilting</option>
+                            <option value="2 Side 5 Cm Quilting 2X">2 Side 5 Cm Quilting 2X</option>
+                            <option value="2 Side 5 Cm Quilting - Non Quilting">2 Side 5 Cm Quilting - Non Quilting</option>
+                            <option value="2 Side Non Quilting 2X">2 Side Non Quilting 2X</option>
+                        </select>
+      </div>
+
+      <div class="field-group">
+        <div class="field-heading"><label for="size">Ukuran kasur</label><span>06</span></div>
+        <p class="field-hint">Pilih dimensi kasur</p>
+        <select class="field-select" id="size">
+                            <option value="0">None</option>
+                            <option value="1">90 x 200 cm</option>
+                            <option value="2">120 x 200 cm</option>
+                            <option value="3">140 x 200 cm</option>
+                            <option value="4">160 x 200 cm</option>
+                            <option value="5">180 x 200 cm</option>
+                            <option value="6">200 x 200 cm</option>
+                        </select>
+      </div>
+          </div>
+          <div class="price-card">
+            <div><span class="summary-label">ESTIMASI HARGA</span><p class="price-note">Harga berdasarkan ukuran pilihan</p></div>
+            <strong id="totalPrice">Rp 0</strong>
+          </div>
+          <button class="primary-button" id="nextButton" type="button" onclick="simpanPilihanKeLocalStorage()">
+            <span>Lanjut pilih finishing style</span><span class="button-arrow">↗</span>
+          </button>
+          <p class="privacy-note">Pilihan Anda dapat disimpan untuk langkah berikutnya.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer"><span>© ARMADILLO SLEEP STUDIO</span><span>Made for better rest.</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
